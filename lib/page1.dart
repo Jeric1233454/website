@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:myapplication/about.dart';
 import 'package:myapplication/page2.dart';
+import 'package:myapplication/watch.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -45,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Page2()),
+                  MaterialPageRoute(builder: (context) => const Episodes()),
                 );
                       },
                       child: Text(
@@ -60,6 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   TextButton(
                     onPressed: () {
+                       Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const About()),
+                );
                       
                     },
                     child: Text(
